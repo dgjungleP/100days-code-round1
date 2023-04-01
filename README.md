@@ -6,4 +6,5 @@
 > 决定对RxJava再进行一次较为深入的学习（基于RxJava 3.1.5）
 
 -[X] Day01 再看RxJava:Hello Flowable
--[ ] Day02 再看RxJava:Subscribe
+-[x] Day02 再看RxJava:Subscribe
+-[x] Day03 再看RxJava:Scheduler
