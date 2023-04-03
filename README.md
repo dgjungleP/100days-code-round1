@@ -8,3 +8,5 @@
 -[X] Day01 再看RxJava:Hello Flowable
 -[x] Day02 再看RxJava:Subscribe
 -[x] Day03 再看RxJava:Scheduler
+-[x] Day04 再看RxJava:创建Flowable（一）
+-[ ] Day05 再看RxJava:创建Flowable（二）
