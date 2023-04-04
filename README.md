@@ -10,4 +10,4 @@
 - [x] Day03 再看RxJava:Scheduler  
 - [x] Day04 再看RxJava:创建Flowable（一）  
 - [x] Day05 再看RxJava:创建Flowable（二）  
-- [ ] Day06 再看RxJava:处理Flowable（一）  
+- [ ] Day06 再看RxJava:创建Flowable（三）  
