@@ -10,7 +10,7 @@
 - [x] Day03 再看RxJava:Scheduler  
 - [x] Day04 再看RxJava:创建Flowable（一） interval  
 - [x] Day05 再看RxJava:创建Flowable（二） timer  
-- [ ] Day06 再看RxJava:创建Flowable（三） merge   
-- [ ] Day07 再看RxJava:创建Flowable（四） zip  
-- [ ] Day08 再看RxJava:转化Flowable（一） buffer
-- [ ] Day09 再看RxJava:转化Flowable（二） delay
+- [x] Day06 再看RxJava:创建Flowable（三） merge   
+- [x] Day07 再看RxJava:创建Flowable（四） zip  
+- [x] Day08 再看RxJava:转化Flowable（一） buffer
+- [ ] Day09 再看RxJava:转化Flowable（二） map,flatmap
