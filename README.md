@@ -11,3 +11,6 @@
 - [x] Day04 再看RxJava:创建Flowable（一）  
 - [x] Day05 再看RxJava:创建Flowable（二）  
 - [ ] Day06 再看RxJava:创建Flowable（三）  
+- [ ] Day07 再看RxJava:创建Flowable（四）
+- [ ] Day08 再看RxJava:转化Flowable（一）
+- [ ] Day09 再看RxJava:转化Flowable（二）
