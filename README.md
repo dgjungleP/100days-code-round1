@@ -12,5 +12,5 @@
 - [x] Day05 再看RxJava:创建Flowable（二） timer  
 - [ ] Day06 再看RxJava:创建Flowable（三） merge   
 - [ ] Day07 再看RxJava:创建Flowable（四） zip  
-- [ ] Day08 再看RxJava:转化Flowable（一）
-- [ ] Day09 再看RxJava:转化Flowable（二）
+- [ ] Day08 再看RxJava:转化Flowable（一） buffer
+- [ ] Day09 再看RxJava:转化Flowable（二） delay
