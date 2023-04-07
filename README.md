@@ -8,9 +8,9 @@
 - [X] Day01 再看RxJava:Hello Flowable  
 - [x] Day02 再看RxJava:Subscribe  
 - [x] Day03 再看RxJava:Scheduler  
-- [x] Day04 再看RxJava:创建Flowable（一）  
-- [x] Day05 再看RxJava:创建Flowable（二）  
-- [ ] Day06 再看RxJava:创建Flowable（三）  
-- [ ] Day07 再看RxJava:创建Flowable（四）
+- [x] Day04 再看RxJava:创建Flowable（一） interval  
+- [x] Day05 再看RxJava:创建Flowable（二） timer  
+- [ ] Day06 再看RxJava:创建Flowable（三） merge   
+- [ ] Day07 再看RxJava:创建Flowable（四） zip  
 - [ ] Day08 再看RxJava:转化Flowable（一）
 - [ ] Day09 再看RxJava:转化Flowable（二）
