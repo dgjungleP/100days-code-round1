@@ -25,7 +25,8 @@ public class ConsoleSubscribe implements Subscriber<Object> {
 
     @Override
     public void onError(Throwable t) {
-
+        System.out.println("Thread:【" + Thread.currentThread().getName() + "】 在 " + Instant
+                .now() + " 发现了异常错误！" + t);
     }
 
     @Override
