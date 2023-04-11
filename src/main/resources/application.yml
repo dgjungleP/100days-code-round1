@@ -1,0 +1,17 @@
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        trace: true
+        web-allow-others: true
+  jpa:
+    show-sql: true
+  datasource:
+    schema: table.sql
+    data: data.sql
