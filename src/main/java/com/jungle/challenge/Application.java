@@ -2,6 +2,7 @@ package com.jungle.challenge;
 
 import com.jungle.challenge.entity.User;
 import com.jungle.challenge.mapper.UserMapper;
+import com.jungle.challenge.plugins.DataDesensitizationPlugin;
 import com.jungle.challenge.plugins.UsedTimeAnalysePlugin;
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
@@ -24,10 +25,15 @@ public class Application implements ApplicationRunner {
     public static void main(String[] args) {
         SpringApplication.run(Application.class);
     }
+//
+//    @Bean
+//    public UsedTimeAnalysePlugin usedTimeAnalysePlugin() {
+//        return new UsedTimeAnalysePlugin();
+//    }
 
     @Bean
-    public UsedTimeAnalysePlugin usedTimeAnalysePlugin() {
-        return new UsedTimeAnalysePlugin();
+    public DataDesensitizationPlugin dataDesensitizationPlugin() {
+        return new DataDesensitizationPlugin();
     }
 
     @Override
