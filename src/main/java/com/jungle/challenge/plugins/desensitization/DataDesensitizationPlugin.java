@@ -1,5 +1,6 @@
-package com.jungle.challenge.plugins;
+package com.jungle.challenge.plugins.desensitization;
 
+import com.jungle.challenge.util.ClassUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.executor.resultset.DefaultResultSetHandler;
@@ -12,10 +13,12 @@ import org.apache.ibatis.plugin.Signature;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
 
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.sql.Statement;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
+import java.util.stream.Collectors;
 
 
 @Intercepts({@Signature(
@@ -43,8 +46,29 @@ public class DataDesensitizationPlugin implements Interceptor {
     }
 
     private void doDesensitize(Class<?> resultMapClazz, Object data) {
-        log.info("Find Clazz:{}", resultMapClazz);
-        log.info("Find Data:{}", data);
+        List<Field> desensitizedFields = ClassUtil
+                .filterFieldList(Arrays.asList(resultMapClazz.getDeclaredFields()), Desensitized.class);
+        if (desensitizedFields.isEmpty()) {
+            return;
+        }
+
+        for (Field field : desensitizedFields) {
+            try {
+                Method getMethod = ClassUtil.getMethod(resultMapClazz, ClassUtil.MethodTYpe.GET, field);
+                Object value = getMethod.invoke(data);
+                if (value == null) {
+                    continue;
+                }
+                Method setMethod = ClassUtil.getMethod(resultMapClazz, ClassUtil.MethodTYpe.SET, field);
+
+                Desensitized annotation = field.getAnnotation(Desensitized.class);
+                Class<?> strategy = annotation.strategy();
+                DesensitizeStrategy desensitizeStrategy = (DesensitizeStrategy) strategy.newInstance();
+                setMethod.invoke(data, desensitizeStrategy.doDesensitize(value));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
 

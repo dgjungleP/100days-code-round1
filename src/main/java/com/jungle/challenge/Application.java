@@ -2,8 +2,7 @@ package com.jungle.challenge;
 
 import com.jungle.challenge.entity.User;
 import com.jungle.challenge.mapper.UserMapper;
-import com.jungle.challenge.plugins.DataDesensitizationPlugin;
-import com.jungle.challenge.plugins.UsedTimeAnalysePlugin;
+import com.jungle.challenge.plugins.desensitization.DataDesensitizationPlugin;
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.ApplicationArguments;

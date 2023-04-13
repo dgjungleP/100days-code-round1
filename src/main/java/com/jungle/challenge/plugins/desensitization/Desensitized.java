@@ -1,4 +1,4 @@
-package com.jungle.challenge.plugins;
+package com.jungle.challenge.plugins.desensitization;
 
 
 import java.lang.annotation.*;
@@ -9,5 +9,5 @@ import java.lang.annotation.*;
 @Target({ElementType.FIELD})
 public @interface Desensitized {
 
-    Class<?> staticConstructor() default DefaultDesensitizeStrategy.class;
+    Class<? extends DesensitizeStrategy> strategy() default DefaultDesensitizeStrategy.class;
 }

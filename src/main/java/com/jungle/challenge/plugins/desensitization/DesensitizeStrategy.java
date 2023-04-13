@@ -1,4 +1,4 @@
-package com.jungle.challenge.plugins;
+package com.jungle.challenge.plugins.desensitization;
 
 public interface DesensitizeStrategy<T, R> {
 
