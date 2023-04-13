@@ -19,4 +19,5 @@
 - [x] Day12 再看RxJava:转化Flowable（三） retry
 - [x] 100DaysCode-Day13 Mybatis 插件入门
 - [x] 100DaysCode-Day14 Mybatis 插件:敏感数据脱敏插件（一）
-- [ ] 100DaysCode-Day15 Mybatis 插件:敏感数据脱敏插件（二）
+- [x] 100DaysCode-Day15 Mybatis 插件:敏感数据脱敏插件（二）
+- [ ] 100DaysCode-Day15 Mybatis 插件:敏感数据脱敏插件（三）
