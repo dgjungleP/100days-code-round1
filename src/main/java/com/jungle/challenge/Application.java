@@ -39,6 +39,6 @@ public class Application implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         log.info("开始运行");
         List<User> userList = userMapper.selectAll();
-        System.out.println(userList);
+        userList.forEach(System.out::println);
     }
 }

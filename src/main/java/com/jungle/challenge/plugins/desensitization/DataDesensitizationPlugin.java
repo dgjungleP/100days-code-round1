@@ -28,6 +28,9 @@ import java.util.stream.Collectors;
 )})
 @Slf4j
 public class DataDesensitizationPlugin implements Interceptor {
+
+    public static final Map<Class<?>, DesensitizeStrategy> STRATEGY_MAP = new HashMap<>();
+
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
         Object proceed = invocation.proceed();
@@ -62,8 +65,13 @@ public class DataDesensitizationPlugin implements Interceptor {
                 Method setMethod = ClassUtil.getMethod(resultMapClazz, ClassUtil.MethodTYpe.SET, field);
 
                 Desensitized annotation = field.getAnnotation(Desensitized.class);
-                Class<?> strategy = annotation.strategy();
-                DesensitizeStrategy desensitizeStrategy = (DesensitizeStrategy) strategy.newInstance();
+                DesensitizeStrategy desensitizeStrategy = STRATEGY_MAP.computeIfAbsent(annotation.strategy(), (key) -> {
+                    try {
+                        return (DesensitizeStrategy) key.newInstance();
+                    } catch (InstantiationException | IllegalAccessException e) {
+                        return new DefaultDesensitizeStrategy();
+                    }
+                });
                 setMethod.invoke(data, desensitizeStrategy.doDesensitize(value));
             } catch (Exception e) {
                 e.printStackTrace();
