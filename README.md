@@ -21,3 +21,11 @@
 - [x] Day14 Mybatis 插件:敏感数据脱敏插件（一）
 - [x] Day15 Mybatis 插件:敏感数据脱敏插件（二）
 - [x] Day16 Mybatis 插件:敏感数据脱敏插件（三）
+  
+> 目前对RPC我认知还是比较浅显，刚好购买了一本《深入理解RPC》,趁机学习一些PRC相关的知识
+
+- [ ] Day17 SPI机制浅读
+- [ ] Day18 Dubbo接入浅试
+- [ ] Day19 gRPC接入浅试
+- [ ] Day20 Thrift接入浅试
+- [ ] Day21 SpringCloud接入浅试
