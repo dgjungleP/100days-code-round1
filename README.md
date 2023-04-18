@@ -24,8 +24,8 @@
   
 > 目前对RPC我认知还是比较浅显，刚好购买了一本《深入理解RPC》,趁机学习一些PRC相关的知识
 
-- [ ] Day17 SPI机制浅读:Java SPI
-- [ ] Day18 双亲委派和打破双亲委派
+- [x] Day17 SPI机制浅读:Java SPI
+- [x] Day18 双亲委派和打破双亲委派
 - [ ] Day19 SPI机制浅读:Spring SPI
 - [ ] Day20 SPI机制浅读:TypeConversion SPI
 - [ ] Day21 SPI机制浅读:Dubbo SPI
@@ -33,3 +33,5 @@
 - [ ] Day23 gRPC接入浅试
 - [ ] Day24 Thrift接入浅试
 - [ ] Day25 SpringCloud接入浅试
+
+> OSGI 一个我们有认识过得东西，可以值得看一下

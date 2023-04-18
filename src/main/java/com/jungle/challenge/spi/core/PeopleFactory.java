@@ -2,7 +2,6 @@ package com.jungle.challenge.spi.core;
 
 import com.jungle.challenge.spi.interfaces.People;
 
-import java.util.Iterator;
 import java.util.ServiceLoader;
 
 public class PeopleFactory {
