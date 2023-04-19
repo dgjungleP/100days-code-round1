@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContextInitializer;
+import org.springframework.context.support.ConversionServiceFactoryBean;
 import org.springframework.core.io.support.SpringFactoriesLoader;
 
 import java.util.List;
