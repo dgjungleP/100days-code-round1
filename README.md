@@ -26,12 +26,14 @@
 
 - [x] Day17 SPI机制浅读:Java SPI
 - [x] Day18 双亲委派和打破双亲委派
-- [ ] Day19 SPI机制浅读:Spring SPI
-- [ ] Day20 SPI机制浅读:TypeConversion SPI
+- [x] Day19 SPI机制浅读:Spring SPI
+- [ ] Day20 Dubbo接入浅试
 - [ ] Day21 SPI机制浅读:Dubbo SPI
-- [ ] Day22 Dubbo接入浅试
-- [ ] Day23 gRPC接入浅试
-- [ ] Day24 Thrift接入浅试
-- [ ] Day25 SpringCloud接入浅试
+- [ ] Day22 gRPC接入浅试 
+- [ ] Day23 Thrift接入浅试 
+- [ ] Day24 SpringCloud接入浅试 
 
 > OSGI 一个我没有有认识过得东西，可以值得看一下
+  
+
+> 组播协议
